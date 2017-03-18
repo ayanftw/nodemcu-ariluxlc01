@@ -1,0 +1,14 @@
+-- file : config.lua
+local module = {}
+
+module.SSID = {}  
+module.SSID["myssid"] = "mypsk"
+
+module.MQTT_HOST = "mqtthost"  
+module.MQTT_USER = ""  
+module.MQTT_pass = ""  
+module.MQTT_PORT = 1883  
+module.ID = node.chipid()
+
+module.ENDPOINT = "sonoff/"  
+return module  
